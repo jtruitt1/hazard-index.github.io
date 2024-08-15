@@ -22,6 +22,6 @@ layout: home
 </table>
 <script>
     $(document).ready(function () {
-        $("#hazard-data > table").DataTable();
+        $("#hazard-data").DataTable();
     });
 </script>
