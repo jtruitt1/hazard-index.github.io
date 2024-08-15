@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<table>
+<table id="hazard-data">
   {% for row in site.data.allHazard_thru1937 %}
     {% if forloop.first %}
     <tr>
@@ -20,3 +20,8 @@ layout: home
     {% endtablerow %}
   {% endfor %}
 </table>
+<script>
+    $(document).ready(function () {
+        $("#hazard-data > table").DataTable();
+    });
+</script>
