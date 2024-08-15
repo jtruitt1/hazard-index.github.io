@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<table id="hazard-data" data-order='[[ 1, "asc" ]]'>
+<table id="hazard-data" data-order='[[ 2, "asc" ]]'>
   {% for row in site.data.allHazard_thru1937 %}
     {% if forloop.first %}
     <thead><tr>
