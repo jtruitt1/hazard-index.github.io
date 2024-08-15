@@ -44,7 +44,9 @@ layout: home
                         // Event listener for user input
                         input.addEventListener('keyup', () => {
                             if (column.search() !== this.value) {
-                                column.search(input.value).draw();
+                                column.search(input.value, {
+                                    regex: true
+                                }).draw();
                             }
                         });
                     });
